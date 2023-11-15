@@ -37,8 +37,10 @@ app.get('*', (req, res) => {
     console.log("Request: No URL found!");
     return;
   }
+  
   //const fullUrl = `${protocol}://${url}`;
-  const fullUrl = url.replace(":/", "://");
+  //const fullUrl = url.replace(":/", "://");
+  const fullUrl = url;
 
   request(
     //{ url: 'https://joke-api-strict-cors.appspot.com/jokes/random' },
